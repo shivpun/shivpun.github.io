@@ -13,6 +13,6 @@ export function getContactModule() {
         // Optional: Any actions to dispatch when the module is loaded
         initialActions: [fetchStories()],
         // Optional: Any actions to dispatch when the module is unloaded
-        finalActions: [contactSaga],
+        finalActions: [],
     };
 }
