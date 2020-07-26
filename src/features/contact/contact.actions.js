@@ -1,7 +1,6 @@
 export const ContactAvailable = "contact/storiesavailable";
 export const ContactLoadStories = "contact/loadstories";
 
-// action creator : StoriesAvailable
 export const storiesAvailable = items => {
 	console.log('[storiesAvailable.js] Actions:');
     return {
@@ -12,7 +11,6 @@ export const storiesAvailable = items => {
     };
 };
 
-// thunk to fetch the stories
 export const fetchStories = () => {
 	console.log('[fetchStories.js] Actions:');
     return (dispatch, getState) => {
@@ -37,7 +35,7 @@ export const fetchStories = () => {
     };
 };
 
-// Helper to fetch the json
+
 const fetchJson = url => {
     return fetch(url).then(response => {
         return response.json();
