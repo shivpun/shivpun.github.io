@@ -85,7 +85,6 @@ class App extends React.Component {
           </a>
         </span>
       </header>
-      {this.renderContent()}
     </div>
   );
   }
